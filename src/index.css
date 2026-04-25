@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cream text-text font-body overflow-x-hidden antialiased;
+  }
+}
+
+@layer utilities {
+  .gold-line {
+    @apply w-16 h-[3px] bg-gold my-3;
+  }
+  
+  .sec-title {
+    @apply font-head text-4xl md:text-5xl lg:text-6xl font-black text-text mb-2 tracking-tight;
+  }
+  
+  .sec-title span {
+    @apply text-gold;
+  }
+}
