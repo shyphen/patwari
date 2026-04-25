@@ -4,11 +4,16 @@ import { motion } from 'framer-motion';
 const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-black">
-      {/* Simple Elegant Background */}
-      <div className="absolute inset-0 z-0 bg-[#0a0a0a]">
-        <div className="absolute inset-0 bg-gradient-to-b from-red/20 to-black opacity-60"></div>
-        {/* Subtle noise texture */}
-        <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E\")" }}></div>
+      {/* Hotel Restaurant Image Background */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=2000" 
+          alt="Restaurant Interior" 
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        {/* Gradients to ensure text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-red/30 to-black/90 opacity-90"></div>
       </div>
 
       {/* Pattern Overlay */}
@@ -57,7 +62,7 @@ const Hero = () => {
               <span className="w-1 h-1 bg-red rounded-full"></span>
               <span>Open Daily 7 AM – 11 PM</span>
             </div>
-          </motion.div>ion.div>
+          </motion.div>
 
           {/* Badges */}
           <motion.div 
